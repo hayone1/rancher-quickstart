@@ -1,0 +1,16 @@
+# list of environment variables that needs to be set for this
+# terraform module to work properly
+
+# be picked up by terraform
+required_env:
+  - ARM_CLIENT_ID
+  - ARM_CLIENT_SECRET
+  - ARM_SUBSCRIPTION_ID
+  - ARM_TENANT_ID
+  - TF_VAR_rancher_server_admin_password
+
+# folders that are required to work with this terraform project
+# location should be relative to this folder
+# it will be also be pasted in the same relative position
+required_folders:
+  - ../rancher-common
